@@ -13,6 +13,13 @@ StreamMe NW Bot Boilerplate provides a groundwork for a creating node webkit + r
 
 Install io.js from https://iojs.org/en/index.html
 Install node webkit from http://nwjs.io/
+Install sass
+
+		npm install -g sass
+
+Install browserify
+
+		npm install -g browserify
 
 ### Mac / Linux
 
