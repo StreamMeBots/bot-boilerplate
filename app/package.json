@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.html",
   "scripts": {
-    "run": "sass sass/main.scss generated.css; browserify --bare ./js/app.js -o generated.js ; zip -r ../${PWD##*/}.nw * ; nw ../question-bot.nw"
+    "run": "node-sass sass/main.scss generated.css; browserify --bare ./js/app.js -o generated.js ; zip -r ../${PWD##*/}.nw * ; nw ../question-bot.nw"
   },
   "author": "StreamMe",
   "license": "ISC",

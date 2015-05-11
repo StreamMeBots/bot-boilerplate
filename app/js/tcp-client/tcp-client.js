@@ -119,12 +119,18 @@ Connection.prototype.tryToConnect = function(i, cb) {
 	});
 
 	var getConnection;
-	if(config.pemFile) {
-		getConnection = function(done) {
-			return tls.connect(config.port, config.host, {
-				ca: [fs.readFileSync( config.pemFile ) ]
-			}, done);
-		}.bind(this);
+	if(config.protocol === 'https://') {
+		if(config.pemFile) {
+			getConnection = function(done) {
+				return tls.connect(config.port, config.host, {
+					ca: [fs.readFileSync( config.pemFile ) ]
+				}, done);
+			}.bind(this);
+		} else {
+			getConnection = function(done) {
+				return tls.connect(config.port, config.host, done);
+			}.bind(this);
+		}
 	} else {
 		getConnection = function(done) {
 			return net.connect({
