@@ -12,6 +12,7 @@ StreamMe NW Bot Boilerplate provides a groundwork for a creating node webkit + r
 ## Dependencies
 
 Install io.js from https://iojs.org/en/index.html
+Install node webkit from http://nwjs.io/
 
 ### Mac / Linux
 
@@ -47,7 +48,7 @@ Change the build script (build.js) to modify the icons, application name, or pla
 
 The top of "app/js/bot/bot.js" listens for "says" and "errors", here are some other events that can come through:
 
-* SAY publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" username="test" role="owner" messageId="7612e141-c2bb-4300-b075-efaab41ef77b" timestamp="2015-05-06T21:04:23+00:00" message="Message One"
-* JOIN publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" roomId="user:dc91e23e-68b4-42c0-a2e9-528a0b05b50c:web" username="test" role="owner" timestamp="2015-05-06T21:04:13+00:00"
-* ERASE messageIds="7612e141-c2bb-4300-b075-efaab41ef77b,fb570949-77b5-4ec8-a497-6997bc7cf423" publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" username="test" role="owner" timestamp="2015-05-06T21:04:53+00:00"
-* LEAVE publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" roomId="user:dc91e23e-68b4-42c0-a2e9-528a0b05b50c:web" username="test" role="owner" timestamp="2015-05-06T21:05:04+00:00"
+		SAY publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" username="test" role="owner" messageId="7612e141-c2bb-4300-b075-efaab41ef77b" timestamp="2015-05-06T21:04:23+00:00" message="Message One"
+		JOIN publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" roomId="user:dc91e23e-68b4-42c0-a2e9-528a0b05b50c:web" username="test" role="owner" timestamp="2015-05-06T21:04:13+00:00"
+		ERASE messageIds="7612e141-c2bb-4300-b075-efaab41ef77b,fb570949-77b5-4ec8-a497-6997bc7cf423" publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" username="test" role="owner" timestamp="2015-05-06T21:04:53+00:00"
+		LEAVE publicId="8b5b64d3-57a4-4702-87d3-99dff9aad1eb" roomId="user:dc91e23e-68b4-42c0-a2e9-528a0b05b50c:web" username="test" role="owner" timestamp="2015-05-06T21:05:04+00:00"
