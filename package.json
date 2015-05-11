@@ -1,0 +1,14 @@
+{
+  "name": "nw-StreamMeBot-bootstrap",
+  "version": "1.0.0",
+  "description": "A project to bootstrap node webkit bots, personal bots to run as desktop applications.",
+  "main": "build.js",
+  "author": "StreamMe",
+  "license": "ISC",
+  "scripts": {
+  	"build": "node build.js"
+  },
+  "devDependencies": {
+    "node-webkit-builder": "^1.0.11"
+  }
+}

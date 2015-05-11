@@ -1,0 +1,41 @@
+{
+  "name": "nw-streamme-bot-bootstrap",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "run": "sass sass/main.scss generated.css; browserify --bare ./js/app.js -o generated.js ; zip -r ../${PWD##*/}.nw * ; nw ../question-bot.nw"
+  },
+  "author": "StreamMe",
+  "license": "ISC",
+  "window": {
+    "title": "StreamMe Bot Bootstrap",
+    "icon": "../icon.png",
+    "toolbar": true,
+    "frame": true,
+    "width": 430,
+    "height": 800,
+    "position": "mouse",
+    "min_width": 300,
+    "min_height": 300
+  },
+  "webkit": {
+    "plugin": true
+  },
+  "dependencies": {
+    "ansi": "^0.3.0",
+    "envify": "^0.2.0",
+    "lodash": "^3.8.0",
+    "moment": "^2.10.2",
+    "react": "^0.13.2",
+    "reactify": "^1.1.0",
+    "request": "^2.55.0",
+    "statics-stylesheets": "0.0.1",
+    "stylesheets": "0.0.5"
+  },
+  "browserify": {
+    "transform": [
+      "reactify",
+      "envify"
+    ]
+  }
+}

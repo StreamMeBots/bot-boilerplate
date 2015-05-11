@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel='stylesheet' href='./generated.css' />
+		<title>Bot</title>
+		<script>
+var gui = require('nw.gui');
+if (process.platform === "darwin") {
+	var mb = new gui.Menu({type: 'menubar'});
+	mb.createMacBuiltin('QBot', {
+		hideEdit: false,
+		hideWindow: true
+	});
+	gui.Window.get().menu = mb;
+}
+		</script>	
+	</head>
+	<body>
+		<div id='bot'></div>
+		<script type="text/javascript" src="./generated.js"></script>
+	</body>
+</html>
