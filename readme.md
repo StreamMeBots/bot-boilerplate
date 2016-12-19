@@ -1,3 +1,7 @@
+# NOTICE
+
+This package is deprecated.  A new api is in the works.
+
 # StreamMe NW Bot Boilerplate
 
 StreamMe NW Bot Boilerplate provides a groundwork for a creating node webkit + react bot application.  It contains:
